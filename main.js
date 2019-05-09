@@ -7,6 +7,7 @@ hamburger.addEventListener('click', () => {
 });
 
 
+
 function navbarLinkClick(event) {
   smoothScroll(event);
 }
@@ -21,7 +22,7 @@ function smoothScroll(event) {
   const targetPosition = document.querySelector(targetId).offsetTop;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
-  const duration = 1000;
+  const duration = 2000;
   let start = null;
 
   window.requestAnimationFrame(step);
