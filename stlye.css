@@ -11,9 +11,6 @@ a:visited {
     text-decoration: none;
 }
 
-body {
-    padding-top: 10vh;
-}
 
 .navbar {
     height: 10vh;
@@ -75,17 +72,17 @@ body {
     background-image: url(images/abstract-expressionism-abstract-painting-acrylic-1174000.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(80%);
     position: relative;
 }
 
 .landing {
-    background-color: rgba(57, 36, 196, 0.788);
+    background-color: rgba(5, 2, 20, 0.788);
     width: 800px;
     height: 500px;
     position: absolute;
     top: 20%;
     left: 20%;
+    /* margin: 50px auto; */
     border-radius: 20%;
     border: 6px solid #ccc;
     -webkit-box-shadow: 3px 17px 43px 20px rgba(46,39,46,1);
@@ -97,16 +94,41 @@ body {
     font-family: 'Amatic SC', cursive;
     text-align: center;
     font-size: 6em;
+    color: white;
+    text-shadow:
+    4px 4px 0px #000000,
+    7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
 .landing h2 {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     font-size: 1.5em;
+    color: white;
+}
+
+.landing img {
+    width: 40%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 30%;
+    border: black solid 5px;
 }
 
 p {
     font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.home-icons {
+    text-align: center;
+}
+
+.home-icons i {
+    font-size: 3em;
+    color: white;
+    margin: 10px;
 }
 
 #about {
@@ -156,9 +178,13 @@ p {
         pointer-events: none;
 }
 
-    .nav-links.open {
+ .nav-links.open {
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
-      }
+    }
+.landing {
+    left: 0;
+}
+
 }
