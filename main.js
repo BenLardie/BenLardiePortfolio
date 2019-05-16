@@ -1,23 +1,26 @@
 const navbarLinks = document.querySelectorAll('.navbar a');
 const navbar = document.querySelector('.nav-links');
 const hamburger = document.querySelector('.navbar-toggler');
+const navbarMenu = document.querySelector(".navbar ul");
 
-hamburger.addEventListener('click', () => {
-    navbar.classList.toggle('open');
-    navbarTogglerClick();
-});
+// hamburger.addEventListener('click', () => {
 
-// hamburger.addEventListener("click", navbarTogglerClick);
+//     navbarTogglerClick();
+// });
+
+hamburger.addEventListener("click", navbarTogglerClick);
 
 function navbarTogglerClick() {
   hamburger.classList.toggle("open-navbar-toggler");
+  navbar.classList.toggle('open');
 }
 
-navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClickClose));
 
-function navbarLinkClickClose() {
-  if(navbarMenu.classList.contains("open")) {
-    navbarToggler.click();
+navbarLinks.forEach(elem => elem.addEventListener('click', navbarLinkClick));
+
+function navbarLinkClick() {
+  if(navbar.classList.contains('open')) {
+    hamburger.click();
   }
 }
 
