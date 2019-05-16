@@ -243,7 +243,8 @@ a:visited {
     background-color: #EBEBEB;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 800px) {
+
     .line {
         width: 30px;
         height: 3px;
@@ -253,6 +254,7 @@ a:visited {
 
     nav {
         position: relative;
+        max-width: 100%;
     }
 
     .hamburger {
@@ -275,13 +277,47 @@ a:visited {
         pointer-events: none;
 }
 
- .nav-links.open {
+.nav-links.open {
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
     }
 .landing {
-    left: 0;
+    max-width: 80%;
+    left: 35px;
 }
+
+#about {
+    display: block;
+    position: relative;
+}
+
+.about-blurb {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    margin: 350px 45px 0;
+}
+
+.about-blurb p {
+    font-size: 0.5em;
+}
+
+.about-header {
+    text-align: center;
+    margin: 0;
+    height: 20%;
+}
+
+.about-header h1 {
+    padding-top: 60px;
+}
+
+#about img {
+    position: absolute;
+    top: 250px;
+    left: 55px;
+}
+
 
 }
