@@ -87,7 +87,8 @@ a:visited {
   }
   .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: #ebebeb;
+    font-family: "Amatic SC", cursive;
   }
   .navbar a.navbar-brand {
     float: left;
@@ -465,6 +466,10 @@ a:visited {
         margin-bottom: 20px;
     }
 
+    .about-blurb p {
+        max-width: 100%;;
+    }
+
     #projects {
         display: block;
         padding-top: 10px;
@@ -484,4 +489,20 @@ a:visited {
     .project-blurb-buddflix {
         top: -100px
     }
+}
+
+@media (max-width: 480px) {
+
+    .project {
+        height: 390px;
+    }
+
+    .project-blurb-buddflix {
+        top: -140px;
+    }
+
+    .project-blurb-redeye {
+        top: -180px;
+    }
+
 }
