@@ -312,6 +312,20 @@
   color: #ebebeb;
 }
 
+@media (max-width: 1920px) {
+     .project-blurb-buddflix {
+        top: -150px;
+      }
+
+      .project-blurb-redeye {
+        top: -160px;
+      }
+
+      .project {
+        height: 450px;
+      }
+}
+
 @media (max-width: 800px) {
   .navbar {
     padding: 0;
@@ -435,3 +449,4 @@
     top: -180px;
   }
 }
+
