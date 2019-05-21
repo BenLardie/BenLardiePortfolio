@@ -312,9 +312,13 @@
   color: #ebebeb;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 2000px) {
      .project-blurb-buddflix {
         top: -150px;
+      }
+
+      .buddflix {
+          max-width: 20%;
       }
 
       .project-blurb-redeye {
