@@ -313,6 +313,14 @@
 }
 
 @media (max-width: 2000px) {
+
+    #about {
+        height: 950px;
+    }
+    #about img {
+        max-width: 50%;
+    }
+
      .project-blurb-buddflix {
         top: -150px;
       }
