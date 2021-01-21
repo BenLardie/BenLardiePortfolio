@@ -39,23 +39,41 @@ const project = [
 let counter = 0;
 
 const handleFirstproject = () => {
+   
     // Author avatar selection
     projectContainer.children[1].children[0].src = project[0].avatar;
     // project Author selection
     projectContainer.children[1].children[1].innerHTML = project[0].name;
     // project text selection
     projectContainer.children[1].children[2].innerHTML = project[0].text;
+    if (project[0].github === '') {
+        projectContainer.children[2].children[0].children[0].className = 'nolink'
+    }
+    if (project[0].live === '') {
+        projectContainer.children[2].children[0].children[1].className = 'nolink'
+    }
+  projectContainer.children[2].children[0].children[0].href = project[0].github;
+  projectContainer.children[2].children[0].children[1].href = project[0].live;
 };
 
 const activeproject = () => {
   projectContainer.classList.add(animation);
+  projectContainer.children[2].children[0].children[0].classList.remove('nolink')
+  projectContainer.children[2].children[0].children[1].classList.remove('nolink')
     // Project Picture
   projectContainer.children[1].children[0].src = project[counter].avatar;
     // project Title selection
   projectContainer.children[1].children[1].innerHTML = project[counter].name;
     // project text selection
     projectContainer.children[1].children[2].innerHTML = project[counter].text;
-
+    if (project[counter].github === '') {
+        projectContainer.children[2].children[0].children[0].className = 'nolink'
+    }
+    if (project[counter].live === '') {
+        projectContainer.children[2].children[0].children[1].className = 'nolink'
+    }
+  projectContainer.children[2].children[0].children[0].href = project[counter].github;
+  projectContainer.children[2].children[0].children[1].href = project[counter].live;
     setTimeout(() => {
         // Remove the active animated class
     projectContainer.classList.remove(animation);

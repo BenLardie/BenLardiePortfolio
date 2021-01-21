@@ -115,6 +115,10 @@
     animation: moveLeftOpposite 1.5s ease-in-out;
 }
 
+.nolink {
+    display: none;
+}
+
 @keyframes moveRight {
 0% {
     transform: translateX(0);
