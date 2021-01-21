@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
         <link rel="stylesheet" href="stlye.css">
+        <link rel="stylesheet" href="cards.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
                 integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
@@ -68,8 +69,51 @@
                         <h1>Projects</h1>
                 </div>
         <div id="projects">
-
-                <div class="project">
+                <div class="project-container project-active">
+                        <div class="project-header"></div>
+                        <div class="project-body">
+                            <img alt="Project Picture" src="" class="project-picture" />
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <div class="project-footer">
+                            <div>
+                                <a ref='#'><i class="fab fa-github"></i></a>
+                                <a ref='#'><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div>
+                                <button id="last">
+                                    <i class="fa fa-3x fa-chevron-circle-left"></i>
+                                </button>
+                                <button id="next">
+                                    <i class="fa fa-3x fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-ghost-container">
+                        <div class="project-ghost-header"></div>
+                        <div class="project-ghost-body">
+                            <img alt="Avatar" src="" />
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <div class="project-ghost-footer">
+                            <div>
+                                <span><i class="fab fa-github"></i></i></span>
+                                <span><i class="fas fa-external-link-alt"></i></span>
+                            </div>
+                            <div>
+                                <button id="ghost-last">
+                                    <i class="fa fa-3x fa-chevron-circle-left"></i>
+                                </button>
+                                <button id="ghost-next">
+                                    <i class="fa fa-3x fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                <!-- <div class="project">
                         <div class="project-name">
                                 <h2>BuddFLix</h2>
                         </div>
@@ -141,7 +185,7 @@
                                         </a>
                                 </div>
                         </div>
-                </div>
+                </div> -->
         </div>
         <div id="contact">
                 <h1>Contact</h1>
@@ -154,6 +198,7 @@
                 <p>Linked In QR Code</p>
         </div>
         <script src="./main.js"></script>
+        <script src="./cards.js"></script>
 </body>
 
 </html>
