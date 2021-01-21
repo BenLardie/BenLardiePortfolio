@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
         <link rel="stylesheet" href="stlye.css">
+        <link rel="stylesheet" href="cards.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
                 integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
@@ -68,80 +69,50 @@
                         <h1>Projects</h1>
                 </div>
         <div id="projects">
-
-                <div class="project">
-                        <div class="project-name">
-                                <h2>BuddFLix</h2>
+                <div class="project-container project-active">
+                        <div class="project-header"></div>
+                        <div class="project-body">
+                            <img alt="Project Picture" src="" class="project-picture" />
+                            <h1></h1>
+                            <p></p>
                         </div>
-                        <img src="images/logo.png" alt="buddflix" class="buddflix" />
-                        <div class="project-blurb">
-                                <p>BuddFlix is a cannabis based movie recommendation site. It was built by a team of 4.
-                                        I worked on the front end which is built in React and uses 2 APIs to get the
-                                        result.</p>
-                                <div class="pro-links">
-                                        <a href="https://github.com/BenLardie/buddflix-react" target="_blank">
-                                                <i class="fas fa-code-branch"></i>
-                                        </a>
-                                        <a href="http://www.buddflix.com" target="_blank">
-                                                <i class="fas fa-link"></i>
-                                        </a>
-                                </div>
+                        <div class="project-footer">
+                            <div>
+                                <a ref='#'><i class="fab fa-github"></i></a>
+                                <a ref='#'><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div>
+                                <button id="last">
+                                    <i class="fa fa-3x fa-chevron-circle-left"></i>
+                                </button>
+                                <button id="next">
+                                    <i class="fa fa-3x fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
                         </div>
-                </div>
-                <div class="project">
-                        <div class="project-name">
-                                <h2>BIS</h2>
+                    </div>
+                    <div class="project-ghost-container">
+                        <div class="project-ghost-header"></div>
+                        <div class="project-ghost-body">
+                            <img alt="Avatar" src="" />
+                            <h1></h1>
+                            <p></p>
                         </div>
-                        <img src="images/bis_logo.png" alt="bis" class="buddflix" />
-                        <div class="project-blurb">
-                                <p>I was hired by BIS a Hamilton based insurance company to redesign there website. Built using the Wordpress
-                                CMS, PHP, CSS and jQuery. I talked with the client regularly on the design and made sure that it had all the functionality 
-                                they where looking for.  
-                                </p>
-                                <div class="pro-links">
-                                        <a href="https://bisinc.ca/" target="_blank">
-                                                <i class="fas fa-link"></i>
-                                        </a>
-                                </div>
+                        <div class="project-ghost-footer">
+                            <div>
+                                <span><i class="fab fa-github"></i></i></span>
+                                <span><i class="fas fa-external-link-alt"></i></span>
+                            </div>
+                            <div>
+                                <button id="ghost-last">
+                                    <i class="fa fa-3x fa-chevron-circle-left"></i>
+                                </button>
+                                <button id="ghost-next">
+                                    <i class="fa fa-3x fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
                         </div>
-                </div>
-                <div class="project">
-                        <div class="project-name">
-                                <h2>Red Eye Espresso</h2>
-                        </div>
-                        <img src="images/redeye.png" alt="redeye" class="redeye" />
-                        <div class="project-blurb">
-                                <p>Red Eye Espresso is a local coffee shop. Working
-                                        with a UX Designer who gave me a design brief I brought the site to life with HTML
-                                        and CSS along with some Python/Django.
-                                        I made the menu into a database because it is always changing. With Django those
-                                        changes will automatically be displayed.</p>
-                                <div class="pro-links">
-                                        <a href="https://github.com/BenLardie/coffee_shop_project" target="_blank">
-                                                <i class="fas fa-code-branch"></i>
-                                        </a>
-                                </div>
-                        </div>
-                </div>
-                <div class="project">
-                        <div class="project-name">
-                                <h2>Favourite Episode</h2>
-                        </div>
-                        <img src="https://res.cloudinary.com/teepublic/image/private/s--Ojs65aHy--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1507837182/production/designs/1967148_1.jpg" alt="office" class="office" />
-                        <div class="project-blurb">
-                                <p>Favourite Episode is a site built in React using Typescript and the Context API for create
-                                a redux without having to add a dependency. Scroll through every episode of The Office and select your favourite episodes.  
-                                </p>
-                                <div class="pro-links">
-                                        <a href="https://favourite-episodes.herokuapp.com/" target="_blank">
-                                                <i class="fas fa-link"></i>
-                                        </a>
-                                        <a href="https://github.com/BenLardie/Favourite-Episode" target="_blank">
-                                                <i class="fas fa-code-branch"></i>
-                                        </a>
-                                </div>
-                        </div>
-                </div>
+                    </div>
         </div>
         <div id="contact">
                 <h1>Contact</h1>
@@ -154,6 +125,7 @@
                 <p>Linked In QR Code</p>
         </div>
         <script src="./main.js"></script>
+        <script src="./cards.js"></script>
 </body>
 
 </html>
