@@ -174,3 +174,37 @@
         opacity: 0.2;
     }
     }
+
+    @media (max-width: 450px) {
+        .project-container,
+        .project-ghost-container {
+            width: 80%;
+        }
+        .project-body h1, 
+        .project-ghost-body h1 {
+            font-size: 1em;
+        }
+        .project-container p,
+        .project-ghost-container p {
+            font-size: 1em;
+        }
+
+        .project-picture,
+        .project-ghost-body img {
+            width: 10em;
+            height: 10em;
+        }
+        .project-footer, .project-ghost-footer {
+            font-size: 2em;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .project-container {
+            height: 38em;
+        }
+
+        .project-ghost-container {
+            height: 38em;
+        }
+    }
