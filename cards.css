@@ -1,19 +1,25 @@
 .project-container{
-    width: 22rem;
-    height: 28rem;
+    width: 75%;
+    height: 32rem;
     background: #fff;
     border-radius: 1.2rem;
     overflow: hidden;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .project-ghost-container {
-    width: 22rem;
-    height: 28rem;
+    width: 75%;
+    height: 32rem;
     background: #fff;
     border-radius: 1.2rem;
     overflow: hidden;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 .project-active {
     z-index: 1;
@@ -22,12 +28,12 @@
 
 .project-header,
 .project-ghost-header {
-    height: 10rem;
+    height: 15rem;
     background-image: linear-gradient(
         to right,
-        rgba(239, 124, 0, 0.8),
-        rgba(255, 181, 102, 0.8)
-    ), url("https://shorturl.at/grwP6");
+        rgba(77, 71, 168, 0.8),
+        rgba(118, 34, 151, 0.8)
+    ), url("https://wallpaperaccess.com/full/402810.jpg");
     background-size: cover;
     background-position: cover;
 }
@@ -37,10 +43,13 @@
     border-radius: 100%;
     display: block;
     margin: auto;
-    margin-top: -4rem;
-    border: 0.5rem solid #fff;
+    margin-top: -14rem;
+    border: 0.5rem solid black;
     z-index: 100;
-    width: 50%;
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    background-color: white;
 }
 
 .project-body,
@@ -48,6 +57,18 @@
     padding: 0 1rem;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.project-body h1, 
+.project-ghost-body h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.project-body p,
+.project-ghost-body p {
+    font-size: 1.5em;
 }
 
 .project-ghost-header {
@@ -67,6 +88,7 @@
 .project-ghost-footer button i,
 .project-ghost-footer span i {
     color: #777;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .project-footer,
@@ -74,6 +96,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    font-size: 4em;
 }
 
 .project-active-animated-next {
